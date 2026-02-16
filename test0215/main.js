@@ -73,7 +73,7 @@ function reset() {
     // let array0 = [];
     history=[];
     chances = 3;
-    gameOver == false;
+    gameOver = false;
     userInput.value = "";
     pickRandomNum();
     resultArea.textContent="result here!!";
