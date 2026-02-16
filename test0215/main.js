@@ -8,26 +8,27 @@
 //입력범위 1~100, 기회유지
 //입력숫자 중복 알림, 기회유지
 
-let computerNum = 0
-let playButton = document.getElementById("playbutton") ;
-let userInput = document.getElementById("userinput") ;
-let resultArea = document.getElementById("resultarea") ;
+let computerNum = 0;
+let playButton = document.getElementById("playbutton");
+let userInput = document.getElementById("userinput");
+let resultArea = document.getElementById("resultarea");
 
 playButton.addEventListener("click", play);
 
 function pickRandomNum() {
-    computerNum = Math.floor(Math.random()*100) +1 ;
+    computerNum = Math.floor(Math.random()*100) +1;
     console.log("answer", computerNum);
 }
 
 function play() {
-    let userValue = userInput.value
+    let userValue = userInput.value;
     if (userValue < computerNum) {
-        resultArea.textContent = "up" ;
+        resultArea.textContent = "up";
     } else if(userValue > computerNum){
-        resultArea.textContent = "down" ;
+        resultArea.textContent = "down";
     } else {
         resultArea.textContent = "BINGO"
-    }
+        // console.log("usaaa");
 }
-pickRandomNum() ;
+}
+pickRandomNum();
