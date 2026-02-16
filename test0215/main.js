@@ -29,5 +29,5 @@ function play() {
     } else {
         resultArea.textContent = "BINGO"
     }
-
+}
 pickRandomNum() ;
